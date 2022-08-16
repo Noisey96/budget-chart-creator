@@ -1,0 +1,15 @@
+/*
+    Name: John Freeman
+    Date: 6/21/22
+    File: item_category_list.css
+    File History: Created on 6/21/22.
+*/
+
+.ms-Form {
+    display: none;
+}
+
+.ms-Form.active {
+    display: flex;
+    flex-direction:column;
+}

@@ -1,0 +1,67 @@
+<!--
+    Name: John Freeman
+    Date: 6/21/22
+    File: item_category_list.html
+    File History: Created on 6/20/22. Edited on 6/21/22 to finish its basic functionality.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Item Category List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fluent UI - https://developer.microsoft.com/fluentui -->
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+        <link rel="stylesheet" type="text/css" href="item_category_list.css">
+
+        <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+        <script type="text/javascript" src="item_category_list.js"></script>
+    </head>
+    <body style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <header><h1>Item Category List</h1></header>
+            <div id="option-list">
+                <button class="ms-Button" id="addForm" name="add-form">Add New Item Category</button>
+                <button class="ms-Button" id="editForm" name="edit-form">Edit Item Category</button>
+                <button class="ms-Button" id="deactivateForm" name="deactivate-form">Deactivate Item Category</button>
+            </div>
+            <br/>
+            <div id="option-forms">
+                <div id="add-form" class="ms-Form">
+                    <label for="inactive-to-add">Inactive item categories:</label>
+                    <select class="ms-Select" id="inactive-to-add" name="inactive-to-add">
+                        <option value="">Please select an inactive item category or...</option>
+                    </select>
+                    <br/>
+                    <label for="new">Add new item category:</label>
+                    <input class="ms-Input" type="text" id="new" name="new"></input>
+                    <p id="addError"></p>
+                    <br/>
+                    <button class="ms-Button" id="add">Add</button>
+                </div>
+
+                <div id="edit-form" class="ms-Form">
+                    <label for="active-to-edit">Active item categories:</label>
+                    <select class="ms-Select" id="active-to-edit" name="active-to-edit">
+                        <option value="">Please select an item category</option>
+                    </select>
+                    <br/>
+                    <label for="editing-area">Edit item category:</label>
+                    <input class="ms-Input" type="text" id="editing-area" name="editing-area"></input>
+                    <p id="editError"></p>
+                    <br/>
+                    <button class="ms-Button" id="edit">Edit</button>
+                </div>
+
+                <div id="deactivate-form" class="ms-Form">
+                    <label for="active-to-deactivate">Active item categories:</label>
+                    <select class="ms-Select" id="active-to-deactivate" name="active-to-deactivate">
+                        <option value="">Please select an item category</option>
+                    </select>
+                    <br/><br/>
+                    <button class="ms-Button" id="deactivate">Deactivate</button>
+                </div>
+            </div>
+    </body>
+</html>

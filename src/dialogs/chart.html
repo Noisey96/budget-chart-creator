@@ -1,0 +1,31 @@
+<!--
+    Name: John Freeman
+    Date: 6/21/22
+    File: chart.html
+    File History: Created on 6/14/22. Edited on 6/20/22 and 6/21/22 to add functionality to update item categories.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Add/Update Chart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fluent UI - https://developer.microsoft.com/fluentui -->
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+        <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+        <script type="text/javascript" src="chart.js"></script>
+    </head>
+    <body style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <label for="select-item-category">SELECT AN ITEM CATEGORY</label>
+        <select class="ms-Select" id="select-item-category" name="select-item-category">
+        </select>
+        <br/><br/>
+        <label for="input-limit">ENTER MONTHLY LIMIT</label>
+        <input class="ms-Input" type="number" id="input-limit" name="input-limit">
+        <br/><br/>
+        <button id="ok-button" class="ms-Button" type="button">OK</button>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+!function(){"use strict";function e(){var e=document.getElementById("select-item-category"),t=e.options[e.selectedIndex].value+"_"+(document.getElementById("input-limit").value||0);Office.context.ui.messageParent(t)}Office.onReady().then((function(){document.getElementById("ok-button").onclick=e}))}();
+//# sourceMappingURL=chart.js.map
