@@ -1,2 +1,0 @@
-!function(){"use strict";function e(e){var t=JSON.parse(e.message);document.getElementById("itemCategoryList").innerText=t.active}function t(e){e.status===Office.AsyncResultStatus.Succeeded?Office.context.ui.messageParent("connected"):Office.context.ui.messageParent("failed")}Office.onReady().then((function(){Office.context.ui.addHandlerAsync(Office.EventType.DialogParentMessageReceived,e,t)}))}();
-//# sourceMappingURL=item_category_list.js.map
