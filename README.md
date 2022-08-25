@@ -1,6 +1,6 @@
 # Budget Chart Creator
 
-This project serves as a Microsoft Excel Add-in that creates charts to help with budgetting. The charts created by this project all look similar. Each chart will be a bar graph where one can evaluate their previous transaction data in a specified item category against a specified monetary limit. This kind of chart is to help avoid overspending in a particular item category for the current month.
+This project serves as a Microsoft Excel Add-in that creates charts to help with budgeting. The charts created by this project all look similar. Each chart will be a bar graph where one can evaluate their previous transaction data in a specified item category against a specified monetary limit. This kind of chart is to help avoid overspending in a particular item category for the current month.
 
 This project is still in development. This project has an incomplete UI, makes too many assumptions, and is prone to errors.
 
